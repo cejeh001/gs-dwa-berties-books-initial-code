@@ -1,14 +1,14 @@
-# Create database script for Berties books
+-- # Create database script for Berties books
 
-# Create the database
+-- # Create the database
 CREATE DATABASE IF NOT EXISTS berties_books;
 USE berties_books;
 
-# Create the application user
+-- # Create the application user
 CREATE USER IF NOT EXISTS 'berties_books_app'@'localhost' IDENTIFIED BY 'qwertyuiop'; 
 GRANT ALL PRIVILEGES ON berties_books.* TO 'berties_books_app'@'localhost';
 
-# Create the tables
+-- # Create the tables
 CREATE TABLE IF NOT EXISTS books (
     id     INT AUTO_INCREMENT,
     name   VARCHAR(50),
