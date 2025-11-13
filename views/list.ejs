@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <title>List for <%=shopData.shopName%></title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1>List for <%=shopData.shopName%></h1>
+    <p>Here are the books for berties books:</p>
+    <ul>
+        <% books.forEach(book => { %>
+            <li><%= books.name %> - £<%= books.price %></li>
+        <% }); %>
+    </ul>
+
+  </body>
+</html>
